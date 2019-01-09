@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:sleepDetector.xcodeproj">
+      location = "group:../com.sevensignal.sleeptest.plist">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/joe/Library/Mobile Documents/com~apple~CloudDocs/Development/sleepDetector/sleepDetector/com.sevensignal.sleeptest.plist">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

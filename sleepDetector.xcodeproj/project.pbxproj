@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D807B5B921DAA4BB00EAA63E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D807B5B821DAA4BB00EAA63E /* main.swift */; };
+		D807B5C021DAA59D00EAA63E /* SleepDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = D807B5BF21DAA59D00EAA63E /* SleepDetector.swift */; };
+		D813E6C321E4EFCB00DB348D /* MessageLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D813E6C221E4EFCB00DB348D /* MessageLogger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		D807B5B521DAA4BB00EAA63E /* sleepDetector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = sleepDetector; sourceTree = BUILT_PRODUCTS_DIR; };
 		D807B5B821DAA4BB00EAA63E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D807B5BF21DAA59D00EAA63E /* SleepDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepDetector.swift; sourceTree = "<group>"; };
+		D813E6C221E4EFCB00DB348D /* MessageLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageLogger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				D807B5B821DAA4BB00EAA63E /* main.swift */,
+				D807B5BF21DAA59D00EAA63E /* SleepDetector.swift */,
+				D813E6C221E4EFCB00DB348D /* MessageLogger.swift */,
 			);
 			path = sleepDetector;
 			sourceTree = "<group>";
@@ -94,6 +100,7 @@
 				TargetAttributes = {
 					D807B5B421DAA4BB00EAA63E = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -119,7 +126,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D813E6C321E4EFCB00DB348D /* MessageLogger.swift in Sources */,
 				D807B5B921DAA4BB00EAA63E /* main.swift in Sources */,
+				D807B5C021DAA59D00EAA63E /* SleepDetector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,9 +253,18 @@
 		D807B5BD21DAA4BB00EAA63E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PK2NBHJ75P;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
@@ -254,9 +272,17 @@
 		D807B5BE21DAA4BB00EAA63E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PK2NBHJ75P;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
